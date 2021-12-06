@@ -1,0 +1,59 @@
+html {
+    background-color: gray;
+}
+
+.common-bg {
+    background-color: #fefefe;
+}
+
+a {
+    text-decoration: none;
+}
+
+.adjusted-img {
+    width: 150px; 
+    height: 150px;
+    margin: 2em;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.paragraph {
+    text-align: justify; 
+    padding: 25px;
+    margin-top: 1em;
+}
+
+.extra-padding {
+    padding: 10px;
+}
+
+.btn-adjusted {
+    width: 10em; 
+    margin: 10px auto 10px;
+    float: right;
+}
+
+legend {
+    position: relative;
+    border: 1px solid;
+}
+
+.caption {
+    font-style: italic;
+    font-size: small;
+    text-align: center;
+}
+
+@media screen and (max-width: 790px) { 
+    figure { 
+        display: none; 
+    }  
+}
+
+@media screen and (max-width: 1000px) { 
+    .center-img {
+        margin-top: 3em;
+    } 
+}
+    
