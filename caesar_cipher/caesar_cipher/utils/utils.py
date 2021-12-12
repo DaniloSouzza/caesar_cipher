@@ -1,8 +1,7 @@
 from typing import Text
 from datetime import datetime
 
-from caesar_cipher import __year__
-
+__year__ = '2021'
 
 class Cipher:
 
