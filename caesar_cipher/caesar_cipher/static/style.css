@@ -45,6 +45,22 @@ legend {
     text-align: center;
 }
 
+.adjusted {
+    text-align: center;
+    padding: 2em 0;
+}
+
+.text-field {
+    height: 200px;
+}
+
+@media screen and (max-width: 990px) { 
+    .adjusted-img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
 @media screen and (max-width: 790px) { 
     figure { 
         display: none; 

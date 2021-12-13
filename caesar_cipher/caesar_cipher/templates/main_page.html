@@ -13,7 +13,7 @@
         <h4 class="extra-padding">THE CAESAR'S CIPHER</h4>
         <hr>
         <div class="row">
-            <figure class="col-sm-3" style="text-align: center;">
+            <figure class="col-sm-3 adjusted" >
                 <img class="img-fluid adjusted-img" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.historyanswers.co.uk%2Fwp-content%2Fuploads%2F2018%2F04%2FGaius_Iulius_Caesar_Vatican_Museum.jpg&f=1&nofb=1">
                 <figcaption class="caption">Gaius Julius Caesar</figcaption>
             </figure>
@@ -32,10 +32,10 @@
             <div class="col-md-6 col-sm-6 extra-padding">
                 <div class="d-grid gap-4">
                     <p style="margin: 0 auto;">
-                        Decrypted Text.
+                        Decrypted Text
                     </p>
                     <form method='post'>
-                        <textarea class="form-control" name='to_encrypt' style="height: 280px;">{% if data.decrypt %}{{ data.decrypt }}{% endif %}</textarea>
+                        <textarea class="form-control text-field" name="to_encrypt">{% if data.decrypt %}{{ data.decrypt }}{% endif %}</textarea>
                         <input type="submit" value="Encrypt" class="btn btn-secondary btn-adjusted">
                     </form>
                 </div>
@@ -46,7 +46,7 @@
                         Encrypted Text
                     </p>
                     <form method='post'>
-                        <textarea class="form-control" name='to_decrypt' style="height: 280px;">{% if data.encrypt %}{{ data.encrypt  }}{% endif %}</textarea>
+                        <textarea class="form-control text-field" name="to_decrypt" >{% if data.encrypt %}{{ data.encrypt  }}{% endif %}</textarea>
                         <input type="submit" value="Decrypt" class="btn btn-secondary btn-adjusted">
                     </form>
                 </div>
