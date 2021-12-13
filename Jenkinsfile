@@ -7,17 +7,14 @@ pipeline {
                 
                 sh 'echo "$JOB_NAME | Cloning Repository..."'
                 sh "git clone https://github.com/DaniloSouzza/caesar_cipher.git"
-                
-                echo 'Configuring environment...'
-                sh 'pip3 install -r $(find . -name "requirements.txt" | xargs realpath)'
-            
+                sh 'python3 -m pip install pytest'
+
                 echo 'Requirements Installed Successfully!'
             }
         }
         stage('Testing') {
             steps {
                 sh 'echo "$JOB_NAME | Running Tests..."'
-                sh 'python3 -m pip install pytest'
                 sh 'python3 -m pytest -p no:cacheprovider -v'
         
                 echo 'Tests proccessed!'
